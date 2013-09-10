@@ -802,7 +802,7 @@ function s:GetCurrentLHSTokens (line, lineNum, tokens, isNewLine)
       unlet tokens[0]
     endif
     return tokens
-  elseif lastChar =~ '[-+~!*/%><=&^|?:,({\[]'
+  elseif lastChar =~ '[-+~!*%><=&^|?:,({\[]'
     return tokens
   endif
 
